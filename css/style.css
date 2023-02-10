@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #48c4f2;
-    --secondary-color: #1c3fa8;
+    --secondary-color: #031b28;
     --dark-color: #333;
     --light-color: #f4f4f4;
     --success-color: #5cb85c;
@@ -39,8 +39,8 @@ h2 {
 
 /* Navbar */
 .navbar {
-    background-color: var(--dark-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--light-color);
     height: 70px;
 }
 
@@ -65,7 +65,7 @@ h2 {
 /* Showcase */
 .showcase {
     height: auto 13;
-    background-color: var(--dark-color);
+    background-color: var(--secondary-color);
     color: #fff;
     position: relative;
     /* overflow: hidden; */
@@ -94,7 +94,7 @@ h2 {
 .showcase-profile img{
     z-index: 100;
     margin:-70px 10px 0  0;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--light-color);
     border-radius: 50%;
 }
 
@@ -133,7 +133,7 @@ h2 {
 }
 
 /* Mobile */
-@media(max-width: 500px) {
+@media(max-width: 360px) {
     .navbar {
         height: 110px;
     }
@@ -146,6 +146,10 @@ h2 {
     .navbar ul {
         padding: 10px;
         background-color: rgba(0,0,0,0.1);
+    }
+
+    .showcase-cover{
+        overflow: hidden;
     }
 
     .under-contruct img{
